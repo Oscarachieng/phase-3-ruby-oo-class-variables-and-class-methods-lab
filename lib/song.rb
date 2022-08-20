@@ -33,6 +33,14 @@ class Song
     def self.genre_count
         {}
     end
+    # defining the genre_count method
+    def self.genre_count
+        @@genres.tally
+    end
+    #defines the artits count method
+    def self.artist_count
+        @@artists.tally
+    end
 end
 
 mine = Song.new("my_love", "oscar", "bluz")
